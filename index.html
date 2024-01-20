@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Cycle</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--tailwind custom class-->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'orange': '#E76F51',
+                'bg-orange': 'rgba(231, 111, 81, 0.10)',
+                'black1': 'rgba(0, 0, 0, 0.80)',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .inter{
+            font-family: 'Inter', sans-serif;
+        }
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="bg-white"> 
+    <header class="bg-white">
+        <nav class="py-5 md:container md:mx-auto ">
+            <div class="navbar">
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>     
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <h1 class="text-3xl text-black poppins font-bold">GEAR CYCLE</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-black poppins gap-x-9" >
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>     
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                 </ul>
+                </div>
+                <div class="navbar-end w-auto pl-24">
+                  <a class="btn text-white bg-orange border-none poppins px-12">Login</a>
+                </div>
+              </div>
+        </nav>
+
+
+        <section class="md:container md:mx-auto bg-white h-auto">
+            <div class="carousel w-full bg-bg-orange">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="images/slider/bike1.png" class="w-full rounded-lg" />
+                  <div>
+                    <h1 class="text-6xl font-bold text-black">Ride-on R15 V4 with Smile</h1>
+                    <p class="py-6 text-black1">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-orange text-xl text-white border-none px-8">Purchase</button>
+                  </div>
+                </div>
+              </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn-circle text-4xl text-orange">❮</a> 
+                    <a href="#slide2" class="btn-circle text-4xl text-orange">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="images/slider/bike2.png" class="w-full rounded-lg" />
+                  <div>
+                    <h1 class="text-6xl font-bold text-black">Ride-on R15 V4 with Smile</h1>
+                    <p class="py-6 text-black1">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-orange text-xl text-white border-none px-8">Purchase</button>
+                  </div>
+                </div>
+                </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn-circle text-4xl text-orange">❮</a> 
+                    <a href="#slide3" class="btn-circle text-4xl text-orange">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="images/slider/bike3.png" class="w-full rounded-lg" />
+                  <div>
+                    <h1 class="text-6xl font-bold text-black">Ride-on R15 V4 with Smile</h1>
+                    <p class="py-6 text-black1">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-orange text-xl text-white border-none px-8">Purchase</button>
+                  </div>
+                </div>
+              </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn-circle text-4xl text-orange">❮</a> 
+                    <a href="#slide4" class="btn-circle text-4xl text-orange">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img src="images/slider/bike4.png" class="w-full rounded-lg" />
+                  <div>
+                    <h1 class="text-6xl font-bold text-black">Ride-on R15 V4 with Smile</h1>
+                    <p class="py-6 text-black1">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn bg-orange text-xl text-white border-none px-8">Purchase</button>
+                  </div>
+                </div>
+              </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn-circle text-4xl text-orange">❮</a> 
+                    <a href="#slide1" class="btn-circle text-4xl text-orange">❯</a>
+                  </div>
+                </div> 
+              </div>
+        </section>
+    </header>
+
+    <main class="bg-white md:container md:mx-auto">
+        <section class="mt-40"> 
+            <h2 class="text-6xl font-bold text-black text-center mb-1">Fetured Bikes In This Year</h2>
+            <p class="text-orange text-xl text-center mb-1">Best bike collection</p>
+            <hr class="w-16 m-auto border-orange">
+            <div class="flex flex-row md:flex md:flex-row mt-11">
+                <div class="flex-1">
+                  <img src="images/others/Rectangle 4637 1.png" alt="" class="m-auto">
+                </div>
+                <div class="flex-1">
+                  <img src="images/others/feature-bike.png" alt="" class="m-auto">
+                </div>
+                <div class="flex-1">
+                  <img src="images/others/Rectangle 4637 1.png" alt="" class="m-auto">
+                </div>
+              </div>
+    </main>
+</body>
+</html>
